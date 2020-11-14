@@ -25,7 +25,7 @@ app.use(express.json());
 app.use('/student', authRoute);
 app.use('/student', notesRoute);
 app.use('/teacher', notesRoute);
-const port = 8000;
+const port = 8800;
 // assignin port number to server
 app.listen(process.env.PORT || port,()=>{
     console.log("server is listening on ",port);
