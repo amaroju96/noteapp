@@ -13,7 +13,7 @@ const routes: Routes = [{path: '', redirectTo: '/login', pathMatch: 'full'},
                         //  { path: 'students', loadChildren: () => import('./students/students.module').then(m => m.StudentsModule) }
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule..forRoot(routes,{useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
