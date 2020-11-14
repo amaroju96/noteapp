@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 var cors = require('cors');
+const path = require('path');
+app.use(express.static(path.join(__dirname,'./dist/noteapp')));
 const authRoute = require('./routes/authentication');
 const notesRoute = require('./routes/svaenotes');
 app.use(cors());
